@@ -29,6 +29,32 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
     @yield('style')
 
+    {{-- <script>
+        var Webflow = Webflow || [];
+        Webflow.push(function() {
+
+          // Load cookie library
+          $.getScript('https://cdn.rawgit.com/js-cookie/js-cookie/v2.1.2/src/js.cookie.js', function() {
+
+            // If cookie found (already shown)
+            if(Cookies.get('notice') !== undefined) {
+
+              // Hide cookie notice (change jQuery selector to match your own)
+              $('.modal-wrapper').remove();
+            }
+
+            // On button click
+            $('.modal-wrapper').click(function() {
+              // Calculate when you want to display the notice again (change 15 to number of minutes you want)
+              var expireTime = new Date(new Date().getTime() + 60000 * 60 * 24 * 60);
+              // Set this cookie
+              Cookies.set('notice', 'shown', { expires: expireTime });
+            });
+          });
+
+        });
+        </script> --}}
+
     <style>
          .text-content {
             max-height: 100px; /* Set the maximum height to determine when to hide content */

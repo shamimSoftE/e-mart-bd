@@ -268,7 +268,7 @@
     {{-- on sell product  $popularProducts--}}
 
     <div class="container">
-        <h2 class="title mb-2" style="border: 1px dashed #3399ffb0;padding: 9px 5px 7px 13px;width: 155px; color: #007bff;">Being Sold</h2><!-- End .title -->
+        <h2 class="title mb-2" style="border: 1px dashed #3399ffb0;padding: 9px 5px 7px 13px;width: 155px; color: #007bff;">Being Sold</h2>
 
         <div class="cat-blocks-container">
             <div class="row">
@@ -279,7 +279,6 @@
                         } catch (\Throwable $th) {
                             $photos = [];
                         }
-
                     @endphp
 
                     <div class="col-6 col-sm-4 col-lg-2">
@@ -295,13 +294,11 @@
                                 <span class="new-price">৳ {{ number_format($pro->product->special_price) }}</span>
                             </a>
                         @endif
-                    </div><!-- End .col-sm-4 col-lg-2 -->
+                    </div>
                 @endforeach
 
-
-
-            </div><!-- End .row -->
-        </div><!-- End .cat-blocks-container -->
+            </div>
+        </div>
     </div>
 
 

@@ -9,11 +9,11 @@
 
 <header class="header header-10 header-intro-clearance">
 
-    <div class="header-top">
+    <div class="header-top" style="background: #007bff;">
         <div class="container">
             <div class="header-left">
                 @if(!empty($info->contact_number))
-                    <a href="tel:{{ $info->contact_number }}"><i class="icon-phone"></i> +88 {{ $info->contact_number }}</a>
+                    <a href="tel:{{ $info->contact_number }}" style="color:white"><i class="icon-phone"></i> +88 {{ $info->contact_number }}</a>
                 @endif
             </div><!-- End .header-left -->
 
@@ -76,7 +76,7 @@
                                 </li>
                                 @else
                                 <li class="login">
-                                    <a href="#signin-modal" data-toggle="modal">Sign in / Sign up</a>
+                                    <a href="#signin-modal" data-toggle="modal" style="color:white">Sign in / Sign up</a>
                                 </li>
                             @endauth
 

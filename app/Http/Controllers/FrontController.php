@@ -25,13 +25,10 @@ class FrontController extends Controller
     {
         $slider = Slider::where('status', 1)->get();
         $categories = Category::where('status', 1)->where('parent_id', null)->get();
-
         $popularCategory = Popular::latest()->select('category_id')->groupBy('category_id')->get();
         $popularProducts = Popular::latest()->select('product_id')->groupBy('product_id')->get();
-
         $section = Section::where('status', 1)->get();
         $products = Product::where('status',1)->whereNotNull('section_id')->latest()->get();
-
         return view('FrontEnd.home.home_content', compact('slider','categories','section','products','popularCategory','popularProducts'));
     }
 

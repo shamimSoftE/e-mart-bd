@@ -8,7 +8,7 @@
                         <p class="text-content" style="color: #fff;">
                             {{ $info->site_about }}
                         </p>
-                        <a class="read-more-link text-center" href="javascript:void(0)" style="margin-top: -25px; font-weight: 700;">Read more</a>
+                        <a class="read-more-link text-center" href="javascript:void(0)" style="margin-top: -25px;">Read more</a>
 
                     </div>
                 </div>
@@ -22,23 +22,23 @@
                             <li><a href="{{ route('contact') }}">Contact us</a></li>
                             <li>
                                 <a href="javascript:void(0)">Trade Licence :
-                                   <strong>
+                                   <span>
                                        {{ isset($info) ? $info->trade_licence_no : '' }}
-                                    </strong>
+                                    </span>
                                 </a><br>
                                 <a href="javascript:void(0)">Tin :
-                                   <strong>
+                                   <span>
                                        {{ isset($info) ? $info->tin : '' }}
-                                    </strong>
+                                    </span>
                                 </a>
                             </li>
-                        </ul><!-- End .widget-list -->
-                    </div><!-- End .widget -->
-                </div><!-- End .col-sm-4 col-lg-3 -->
+                        </ul>
+                    </div>
+                </div>
 
                 <div class="col-sm-4 col-lg-3">
                     <div class="widget">
-                        <h4 class="widget-title" style="color: #fff;">My Account</h4><!-- End .widget-title -->
+                        <h4 class="widget-title" style="color: #fff;">My Account</h4>
 
                         <ul class="widget-list">
                             @auth
@@ -47,13 +47,13 @@
                                 <li><a href="#signin-modal" data-toggle="modal">Sign in</a></li>
                             @endauth
                             <li><a href="{{ route('cart_item') }}">View Cart</a></li>
-                            <li><a href="javascript:void(0)">E-cab: <strong>{{ isset($info) ? $info->e_cad_id : '' }} </strong></a></li>
-                        </ul><!-- End .widget-list -->
-                    </div><!-- End .widget -->
-                </div><!-- End .col-sm-64 col-lg-3 -->
-            </div><!-- End .row -->
-        </div><!-- End .container -->
-    </div><!-- End .footer-middle -->
+                            <li><a href="javascript:void(0)">E-cab: <span>{{ isset($info) ? $info->e_cad_id : '' }} </span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="footer-bottom">
         <div class="container">

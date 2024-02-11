@@ -33,7 +33,6 @@ use App\Http\Controllers\ShippingAddressController;
 |
 */
 
-
 Route::get('/', [FrontController::class, 'index'])->name('home');
 
 
